@@ -1,0 +1,18 @@
+{
+  "company": "Nyad",
+  "repo": "bio-ops-shift-copilot",
+  "metrics": [
+    "wastewater_coverage",
+    "operators_risk",
+    "reason_precision",
+    "biological_latency"
+  ],
+  "failure_modes": [
+    "wastewater_drift",
+    "operators_gap",
+    "reason_misroute",
+    "biological_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}

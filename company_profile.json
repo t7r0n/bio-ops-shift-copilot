@@ -1,0 +1,49 @@
+{
+  "company": "Nyad",
+  "company_slug": "nyad",
+  "repo": "bio-ops-shift-copilot",
+  "package": "bio_ops_shift_copilot",
+  "cli": "bio-ops-shift-copilot",
+  "title": "Bio Ops Shift Copilot",
+  "problem": "wastewater operators need AI help that can reason over biological process state without pretending sensor-free predictions are certain.",
+  "direction": "A shift-level wastewater operations copilot that turns synthetic microscopy/process logs into explainable biological state, confidence bands, and operator handoff notes.",
+  "why": "Nyad describes itself as an AI copilot for wastewater, adding a microbiologist to every shift. The project focuses on uncertainty-aware operator support, missing-signal warnings, and handoff quality.",
+  "terms": [
+    "wastewater",
+    "operators",
+    "reason",
+    "biological",
+    "process",
+    "state",
+    "pretending",
+    "sensor-free",
+    "predictions",
+    "certain",
+    "shift-level",
+    "operations",
+    "copilot",
+    "turns",
+    "synthetic",
+    "microscopy",
+    "explainable",
+    "confidence"
+  ],
+  "metrics": [
+    "wastewater_coverage",
+    "operators_risk",
+    "reason_precision",
+    "biological_latency"
+  ],
+  "failure_modes": [
+    "wastewater_drift",
+    "operators_gap",
+    "reason_misroute",
+    "biological_blindspot"
+  ],
+  "sources": [
+    "https://www.nyad.ai/",
+    "https://www.nyad.ai/about",
+    "https://www.linkedin.com/company/nyad-ai"
+  ],
+  "github_url": "https://github.com/t7r0n/bio-ops-shift-copilot"
+}
