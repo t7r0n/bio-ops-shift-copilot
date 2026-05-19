@@ -1,2 +1,0 @@
-[console_scripts]
-bio-ops-shift-copilot = bio_ops_shift_copilot.cli:main
