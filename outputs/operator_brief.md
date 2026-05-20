@@ -1,6 +1,6 @@
 # Operator Brief: Nyad
 
-Nyad gets a local, deterministic pressure test around wastewater, operators, and reason. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Nyad gets a local, deterministic pressure test around wastewater, operators, and reason. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 

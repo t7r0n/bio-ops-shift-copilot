@@ -1,11 +1,11 @@
 {
   "layers": [
     {
-      "name": "synthetic_fixture_replay",
+      "name": "fixture_replay",
       "purpose": "exercise wastewater and operators cases"
     },
     {
-      "name": "domain_strategy",
+      "name": "strategy_model",
       "purpose": "score wastewater_coverage and operators_risk"
     },
     {
