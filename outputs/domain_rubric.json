@@ -1,19 +1,37 @@
 {
-  "company": "Nyad",
   "repo": "bio-ops-shift-copilot",
-  "metrics": [
-    "wastewater_coverage",
-    "operators_risk",
-    "reason_precision",
-    "biological_latency"
+  "company": "Nyad",
+  "rubric_axes": [
+    {
+      "axis": "wastewater_coverage",
+      "failures": [
+        "wastewater_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "operators_risk",
+      "failures": [
+        "operators_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "reason_precision",
+      "failures": [
+        "reason_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "biological_latency",
+      "failures": [
+        "biological_blindspot"
+      ],
+      "evidence_required": true
+    }
   ],
-  "failure_modes": [
-    "wastewater_drift",
-    "operators_gap",
-    "reason_misroute",
-    "biological_blindspot"
-  ],
-  "domain_archetypes": [
+  "archetypes": [
     {
       "name": "wastewater evidence replay",
       "trigger": "wastewater signal changes while operators context is stale",
@@ -35,6 +53,9 @@
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "minimum_cases": 144,
-  "requires_evidence_markers": true
+  "sources_used": [
+    "https://www.nyad.ai/",
+    "https://www.nyad.ai/about",
+    "https://www.linkedin.com/company/nyad-ai"
+  ]
 }
