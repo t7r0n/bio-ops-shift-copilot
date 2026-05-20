@@ -1,61 +1,57 @@
 {
   "repo": "bio-ops-shift-copilot",
-  "company": "Nyad",
+  "company": "Bio Ops Shift Copilot",
   "rubric_axes": [
     {
-      "axis": "wastewater_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "wastewater_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "operators_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "operators_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "reason_precision",
+      "axis": "claim_precision",
       "failures": [
-        "reason_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "biological_latency",
+      "axis": "review_latency",
       "failures": [
-        "biological_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "wastewater evidence replay",
-      "trigger": "wastewater signal changes while operators context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "operators boundary probe",
-      "trigger": "operators handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "reason regression harness",
-      "trigger": "reason behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "biological operator packet",
-      "trigger": "biological output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.nyad.ai/",
-    "https://www.nyad.ai/about",
-    "https://www.linkedin.com/company/nyad-ai"
-  ]
+  "sources_used": []
 }

@@ -1,71 +1,61 @@
 {
-  "company": "Nyad",
-  "company_slug": "nyad",
+  "company": "Bio Ops Shift Copilot",
+  "company_slug": "bio-ops-shift-copilot",
   "repo": "bio-ops-shift-copilot",
   "package": "bio_ops_shift_copilot",
   "cli": "bio-ops-shift-copilot",
   "title": "Bio Ops Shift Copilot",
   "problem": "wastewater operators need AI help that can reason over biological process state without pretending sensor-free predictions are certain.",
   "direction": "A shift-level wastewater operations copilot that turns synthetic microscopy/process logs into explainable biological state, confidence bands, and operator handoff notes.",
-  "why": "Nyad describes itself as an AI copilot for wastewater, adding a microbiologist to every shift. The project focuses on uncertainty-aware operator support, missing-signal warnings, and handoff quality.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "wastewater",
-    "operators",
-    "reason",
-    "biological",
-    "process",
-    "state",
-    "pretending",
-    "sensor-free",
-    "predictions",
-    "certain",
-    "shift-level",
-    "operations",
-    "copilot",
-    "turns",
-    "synthetic",
-    "microscopy",
-    "explainable",
-    "confidence"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "wastewater_coverage",
-    "operators_risk",
-    "reason_precision",
-    "biological_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "wastewater_drift",
-    "operators_gap",
-    "reason_misroute",
-    "biological_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "wastewater evidence replay",
-      "trigger": "wastewater signal changes while operators context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "operators boundary probe",
-      "trigger": "operators handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "reason regression harness",
-      "trigger": "reason behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "biological operator packet",
-      "trigger": "biological output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.nyad.ai/",
-    "https://www.nyad.ai/about",
-    "https://www.linkedin.com/company/nyad-ai"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/bio-ops-shift-copilot"
 }

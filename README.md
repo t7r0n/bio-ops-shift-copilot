@@ -53,12 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://www.nyad.ai/
-- https://www.nyad.ai/about
-- https://www.linkedin.com/company/nyad-ai
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
