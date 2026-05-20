@@ -1,0 +1,69 @@
+{
+  "company": "Nyad",
+  "repo": "bio-ops-shift-copilot",
+  "terms": [
+    "wastewater",
+    "operators",
+    "reason",
+    "biological",
+    "process",
+    "state",
+    "pretending",
+    "sensor-free"
+  ],
+  "metrics": [
+    "wastewater_coverage",
+    "operators_risk",
+    "reason_precision",
+    "biological_latency"
+  ],
+  "failure_modes": [
+    "wastewater_drift",
+    "operators_gap",
+    "reason_misroute",
+    "biological_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "wastewater evidence replay",
+      "metric": "wastewater_coverage",
+      "failure_mode": "wastewater_drift",
+      "evidence": "ev_0088",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "biological operator packet",
+      "metric": "operators_risk",
+      "failure_mode": "operators_gap",
+      "evidence": "ev_0099",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "reason regression harness",
+      "metric": "reason_precision",
+      "failure_mode": "reason_misroute",
+      "evidence": "ev_0022",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "operators boundary probe",
+      "metric": "biological_latency",
+      "failure_mode": "biological_blindspot",
+      "evidence": "ev_0121",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Nyad gets a local, deterministic pressure test around wastewater, operators, and reason. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}

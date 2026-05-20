@@ -2,19 +2,39 @@
 
 A shift-level wastewater operations copilot that turns synthetic microscopy/process logs into explainable biological state, confidence bands, and operator handoff notes.
 
-## Why This Exists
+![Bio Ops Shift Copilot working dashboard](outputs/project_working.svg)
+
+## Why it exists
 
 wastewater operators need AI help that can reason over biological process state without pretending sensor-free predictions are certain.
 
-## What It Builds
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-- Replays synthetic `wastewater` and `operators` cases against the project's evidence rules.
-- Scores `wastewater_coverage`, `operators_risk`, and `reason_precision` so regressions are visible in CSV and JSON.
-- Plants `wastewater drift` and `operators gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `bio-ops-shift-copilot` without hosted services.
+## What is inside
 
-## Local Run
+- A deterministic replay harness tuned around wastewater, operators, and reason.
+- Company-specific strategy code in `src/bio_ops_shift_copilot/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Bio Ops Shift Copilot evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `wastewater coverage`
+- `operators risk`
+- `reason precision`
+- `biological latency`
+
+## Failure modes it plants
+
+- wastewater drift
+- operators gap
+- reason misroute
+- biological blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -43,4 +61,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
